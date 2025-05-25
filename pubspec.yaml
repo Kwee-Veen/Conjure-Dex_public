@@ -1,0 +1,49 @@
+name: conjure_dex
+description: "Digital encyclopaedia for the Conjure card game"
+
+# Prevent accidental publishing to pub.dev.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  get: ^4.6.6
+  simple_barcode_scanner: ^0.3.0
+  device_preview: ^1.2.0
+  popover: ^0.3.1
+  app_links: ^6.4.0
+  flutter_web_plugins:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Enable generation of localized Strings from arb files.
+  generate: true
+
+  fonts:
+    - family: TrueCrimes
+      fonts:
+        - asset: fonts/true-crimes.ttf
+
+    - family: Cinzel
+      fonts:
+        - asset: fonts/cinzel-decorative-regular.ttf
+
+  assets:
+    - assets/images/CardImages/
+    - assets/images/Icons/
+    - assets/ConjureCards.json
